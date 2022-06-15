@@ -1,0 +1,74 @@
+ * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(156, 32, 32);
+}
+
+
+ .container {
+    max-height: 50%;
+    max-width: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+        "one one one one one one one two two two two"
+        "one one one one one one one two two two two"
+        "one one one one one one one two two two two"
+        "one one one one one one one two two two two"
+        "three three three three three four four four four four four"
+        "three three three three three four four four four four four"
+        "three three three three three five five five five five five "
+        "three three three three three five five five five five five"
+        "three three three three three five five five five five five"
+    ;
+    grid-gap:8px;
+}
+
+
+#one {
+    background-color: rgb(231, 82, 82);
+    grid-area: one;
+}
+
+#two {
+   background-color:  greenyellow;
+    grid-area: two;
+}
+
+#three {
+   background-color:  burlywood;
+    grid-area: three;
+}
+
+#four {
+    background-color: skyblue;
+    grid-area: four;
+}
+
+#five {
+    background-color: skyblue;
+    grid-area: five;
+}
+
+header {
+    margin-top: 3rem;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
